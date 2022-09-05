@@ -1,0 +1,36 @@
+.about--container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #3a3335;
+}
+
+.about--picture {
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 10px 0px #3a3335;
+}
+
+.about--para {
+    margin-top: 30px;
+    text-align: justify;
+    height: auto;
+    width: 300px;
+    line-height: 150%;
+    font-weight:900;
+    letter-spacing: 200%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 10px 0px #3a3335;
+}
+
+@media (min-width: 600px) {
+    .about--para {
+        width: 584px;
+    }
+}
+

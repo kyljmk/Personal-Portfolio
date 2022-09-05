@@ -20,7 +20,7 @@ function Header({ darkMode, onClick }) {
                 <a href="mailto:kyle.manson-kullin@appliedtechnology.se">
                     <AlternateEmailIcon sx={{ fontSize: 40 }} className="header--icon" />
                 </a>
-                { darkMode == false ? 
+                { darkMode === false ? 
                     <NightlightIcon sx={{ fontSize: 40 }} className="header--icon" onClick={onClick} /> :
                     <LightModeIcon sx={{ fontSize: 40 }} className="header--icon" onClick={onClick} />
                 }

@@ -1,6 +1,8 @@
 import './App.css';
 import Header from './components/Header';
+import About from './components/About'
 import { useState } from 'react';
+import Projects from './components/Projects';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -11,6 +13,8 @@ function App() {
   return (
     <div className="App">
       <Header darkMode={darkMode} onClick={handleChange}/>
+      <About />
+      <Projects />
     </div>
   );
 }
