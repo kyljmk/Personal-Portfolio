@@ -1,0 +1,53 @@
+.header--name {
+  color: #3a3335;
+  margin: 0;
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.header {
+  background-color: whitesmoke;
+  box-shadow: 0px 1px 10px 0px #3a3335;
+  margin: 0;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header--icon {
+  margin-right: 5px;
+  text-decoration: none;
+  color: #3a3335;
+}
+
+.header--icongroup {
+  width: 100px;
+}
+
+.header--icon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3a3335;
+}
+
+@media (min-width: 500px) {
+  .header {
+    height: 100px;
+  }
+
+  .header--icongroup {
+    width: auto;
+  }
+
+  .header--icon {
+    margin-right: 15px;
+  }
+
+  .header--name {
+    font-size: 42px;
+  }
+}
