@@ -1,0 +1,26 @@
+.projectcard {
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 10px 0px #3a3335;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.projectcard--title {
+    margin: 0;
+}
+
+.projectcard--image {
+    width: 200px;
+    border: #3a3335 1px solid;
+}
+
+@media (min-width: 600px) {
+    .projectcard {
+        width: 500px;
+    }
+}
