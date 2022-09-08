@@ -5,16 +5,24 @@ function ProjectCard({ projectsArray }) {
     return db - da;
   });
 
+  console.log(projectsArray);
+
   const renderedProjects = projectsArray.map((x) => {
     const imgSrc = "./" + x.name + ".png";
     const alt = "A preview of " + x.name;
 
     return (
       <div className="projectcard">
-        <h3 className="projectcard--title">{x.name}</h3>
-        <p>{x.description}</p>
-        <button>GitHub Link</button>
-        <button></button>
+        <div className="projectcard--text">
+          <h3 className="projectcard--title">{x.name}</h3>
+          <p className="projectcard--desription">{x.description}</p>
+          <div className="projectcard--buttons">
+            <a href={x.html_url}>
+              <button>GitHub Link</button>
+            </a>
+            <button>Live Demo</button>
+          </div>
+        </div>
         <img className="projectcard--image" src={imgSrc} alt={alt} />
       </div>
     );

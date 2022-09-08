@@ -2,7 +2,7 @@
     width: 250px;
     padding: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: whitesmoke;
     box-shadow: 0px 1px 10px 0px #3a3335;
     margin-bottom: 25px;
@@ -10,13 +10,38 @@
     height: auto;
 }
 
+.projectcard--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: auto;
+    width: 100%;
+    margin-right: 20px;
+}
+
 .projectcard--title {
     margin: 0;
 }
 
+
 .projectcard--image {
     width: 200px;
-    border: #3a3335 1px solid;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+}
+
+.projectcard--buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectcard--buttons button {
+    padding: 3px;
+    background-color: #e5d4ed;
+    border-radius: 5px;
+    border: lightgray 1px solid;
+    cursor: pointer;
 }
 
 @media (min-width: 600px) {
