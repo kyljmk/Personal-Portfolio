@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header darkMode={darkMode} onClick={handleChange} />
       <About />
-      <h2 className="project--title">Projects</h2>
+      <h2 className="project--title">My Projects</h2>
       <div className="projectcontainer">
         <Projects />
       </div>
