@@ -8,7 +8,9 @@ function Projects() {
   useEffect(function () {
     fetch("https://api.github.com/users/kyljmk/repos")
       .then((res) => res.json())
-      .then((data) => setProjectsArray(data));
+      .then((data) =>
+        setProjectsArray(data.filter((x) => x.name.includes("PF")))
+      );
   }, []);
   return <ProjectCard projectsArray={projectsArray} />;
 }

@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import { useState } from "react";
 import Projects from "./components/Projects";
+import TechStack from "./components/TechStack";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,6 +19,7 @@ function App() {
       <div className="projectcontainer">
         <Projects />
       </div>
+      <TechStack />
     </div>
   );
 }

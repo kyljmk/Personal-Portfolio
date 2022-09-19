@@ -5,16 +5,16 @@ function ProjectCard({ projectsArray }) {
     return db - da;
   });
 
-  console.log(projectsArray);
-
   const renderedProjects = projectsArray.map((x) => {
-    const imgSrc = "./" + x.name + ".png";
-    const alt = "A preview of " + x.name;
+    const filteredName = x.name.slice(0, -2);
+
+    const imgSrc = "./" + filteredName + ".png";
+    const alt = "A preview of " + filteredName;
 
     return (
       <div className="projectcard">
         <div className="projectcard--text">
-          <h3 className="projectcard--title">{x.name}</h3>
+          <h3 className="projectcard--title">{filteredName}</h3>
           <p className="projectcard--desription">{x.description}</p>
           <div className="projectcard--buttons">
             <a href={x.html_url}>

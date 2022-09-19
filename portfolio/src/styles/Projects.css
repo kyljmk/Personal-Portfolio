@@ -1,13 +1,24 @@
+
+
 .projectcard {
     width: 250px;
     padding: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: whitesmoke;
     box-shadow: 0px 1px 10px 0px #3a3335;
     margin-bottom: 25px;
     border-radius: 10px;
     height: auto;
+    font-weight: 300;
+}
+
+.projectcard--image {
+    width: 200px;
+    margin-top: 20px;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    align-self: center;
 }
 
 .projectcard--text {
@@ -21,13 +32,7 @@
 
 .projectcard--title {
     margin: 0;
-}
-
-
-.projectcard--image {
-    width: 200px;
-    border: solid 1px lightgray;
-    border-radius: 10px;
+    font-weight: 300;
 }
 
 .projectcard--buttons {
@@ -42,11 +47,19 @@
     border-radius: 5px;
     border: lightgray 1px solid;
     cursor: pointer;
+    font-weight: 300;
     color: #3a3335;
 }
 
 @media (min-width: 600px) {
     .projectcard {
         width: 500px;
+        flex-direction: row;
+    }
+
+    .projectcard--image {
+        width: 200px;
+        border: solid 1px lightgray;
+        border-radius: 10px;
     }
 }

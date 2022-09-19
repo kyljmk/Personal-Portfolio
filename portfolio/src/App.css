@@ -8,7 +8,7 @@ body {
 }
 
 .App {
-  color: #3a3335;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +16,7 @@ body {
 
 .project--title {
   font-size: 32px;
+  font-weight: 300;
 }
 
 .projectcontainer {
