@@ -1,3 +1,11 @@
+:root {
+    --blackCoffee: #3A3335;
+    --blueCrayola: #0075F2;
+    --beauBlue: #C9DAEA;
+    --mauve:#F4A5AE;
+    --canary: #FFFD98;
+  }
+
 .about--container {
     padding: 30px;
     display: flex;
@@ -7,10 +15,20 @@
     color: #3a3335;
 }
 
+.about--container-dark {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--mauve)
+}
+
+
 .about--picture {
     width: 180px;
     border-radius: 100%;
-    box-shadow: 0px 1px 10px 0px #3a3335;
+    /*box-shadow: 0px 1px 10px 0px #3a3335;*/
 }
 
 .about--para {
@@ -25,8 +43,8 @@
     font-weight: 300;
     border-radius: 10px;
     padding: 15px;
-    background-color: whitesmoke;
-    box-shadow: 0px 1px 10px 0px #3a3335;
+
+   /* box-shadow: 0px 1px 10px 0px #3a3335;*/
 }
 
 @media (min-width: 600px) {

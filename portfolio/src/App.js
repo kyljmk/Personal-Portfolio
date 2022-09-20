@@ -12,14 +12,16 @@ function App() {
     setDarkMode((prev) => !prev);
   }
   return (
-    <div className="App">
+    <div className={`App${darkMode ? "-dark" : ""}`}>
       <Header darkMode={darkMode} onClick={handleChange} />
-      <About />
-      <h2 className="project--title">My Projects</h2>
+      <About darkMode={darkMode} />
+      <h2 className={`project--title${darkMode ? "-dark" : ""}`}>
+        My Projects
+      </h2>
       <div className="projectcontainer">
-        <Projects />
+        <Projects darkMode={darkMode} />
       </div>
-      <TechStack />
+      <TechStack darkMode={darkMode} />
     </div>
   );
 }

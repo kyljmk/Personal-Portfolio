@@ -1,8 +1,8 @@
 import "../styles/About.css";
 
-function About() {
+function About({ darkMode }) {
   return (
-    <div className="about--container">
+    <div className={`about--container${darkMode ? "-dark" : ""}`}>
       <img
         className="about--picture"
         src="/portfolio-pic.png"

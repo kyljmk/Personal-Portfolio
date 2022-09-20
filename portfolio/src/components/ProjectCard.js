@@ -1,4 +1,4 @@
-function ProjectCard({ projectsArray }) {
+function ProjectCard({ projectsArray, darkMode }) {
   projectsArray.sort((a, b) => {
     let da = new Date(a.updated_at),
       db = new Date(b.updated_at);
@@ -12,7 +12,7 @@ function ProjectCard({ projectsArray }) {
     const alt = "A preview of " + filteredName;
 
     return (
-      <div className="projectcard">
+      <div className={`projectcard${darkMode ? "-dark" : ""}`}>
         <div className="projectcard--text">
           <h3 className="projectcard--title">{filteredName}</h3>
           <p className="projectcard--desription">{x.description}</p>

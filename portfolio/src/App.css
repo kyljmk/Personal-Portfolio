@@ -1,22 +1,44 @@
+:root {
+  --blackCoffee: #3A3335;
+  --blueCrayola: #0075F2;
+  --beauBlue: #C9DAEA;
+  --mauve:#F4A5AE;
+  --canary: #FFFD98;
+}
+
 * {
   font-family: "Signika Negative", sans-serif;
+  cursor: default;
 }
 
 body {
   margin: 0;
-  background-color: #c9daea;
+  
 }
 
 .App {
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.App-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
 .project--title {
   font-size: 32px;
   font-weight: 300;
+  color: var(--blackCoffee);
+}
+
+.project--title-dark {
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--mauve);
 }
 
 .projectcontainer {

@@ -2,7 +2,7 @@ import "../styles/Projects.css";
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
 
-function Projects() {
+function Projects({ darkMode }) {
   const [projectsArray, setProjectsArray] = useState([]);
 
   useEffect(function () {
@@ -12,7 +12,7 @@ function Projects() {
         setProjectsArray(data.filter((x) => x.name.includes("PF")))
       );
   }, []);
-  return <ProjectCard projectsArray={projectsArray} />;
+  return <ProjectCard darkMode={darkMode} projectsArray={projectsArray} />;
 }
 
 export default Projects;

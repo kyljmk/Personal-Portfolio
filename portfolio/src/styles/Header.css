@@ -1,6 +1,13 @@
+:root {
+  --blackCoffee: #3A3335;
+  --blueCrayola: #0075F2;
+  --beauBlue: #C9DAEA;
+  --mauve:#F4A5AE;
+  --canary: #FFFD98;
+}
+
 .header {
-  background-color: whitesmoke;
-  box-shadow: 0px 1px 10px 0px #3a3335;
+  background-color: var(--blackCoffee);
   margin: 0;
   height: 100px;
   display: flex;
@@ -11,31 +18,26 @@
 }
 
 .header--name {
-  color: #3a3335;
+  color: var(--mauve);
   font-weight: 300;
   margin: 0;
   margin-right: auto;
   margin-left: 15px;
 }
 
-.header--name:hover {
-  color:#ef7b45;
-  cursor: default ;
+.header--icongroup {
+  width: 100px;
 }
 
 .header--icon {
   margin-right: 5px;
   text-decoration: none;
-  color: #3a3335;
-}
-
-.header--icongroup {
-  width: 100px;
+  color: var(--mauve);
 }
 
 .header--icon:hover {
   cursor: pointer;
-  color: #ef7b45
+  color: var(--beauBlue)
 }
 
 @media (min-width: 600px) {
@@ -53,5 +55,11 @@
 
   .header--name {
     font-size: 56px;
+  }
+}
+
+@media (min-width: 740px) {
+  .linebreak {
+    display: none;
   }
 }
