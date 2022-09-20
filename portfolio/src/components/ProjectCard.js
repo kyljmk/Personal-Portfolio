@@ -11,16 +11,24 @@ function ProjectCard({ projectsArray, darkMode }) {
     const imgSrc = "./" + filteredName + ".png";
     const alt = "A preview of " + filteredName;
 
+    const demoLink = x.description.split("%")[1];
+    console.log(demoLink);
     return (
       <div className={`projectcard${darkMode ? "-dark" : ""}`}>
         <div className="projectcard--text">
           <h3 className="projectcard--title">{filteredName}</h3>
-          <p className="projectcard--desription">{x.description}</p>
+          <p className="projectcard--desription">
+            {x.description.split("%")[0]}
+          </p>
           <div className="projectcard--buttons">
             <a href={x.html_url}>
               <button>GitHub Link</button>
             </a>
-            <button>Live Demo</button>
+            {demoLink && (
+              <a href={demoLink}>
+                <button>Live Demo</button>
+              </a>
+            )}
           </div>
         </div>
         <img className="projectcard--image" src={imgSrc} alt={alt} />
