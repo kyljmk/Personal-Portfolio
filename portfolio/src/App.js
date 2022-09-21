@@ -4,6 +4,7 @@ import About from "./components/About";
 import { useEffect, useState } from "react";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
+import Footer from "./components/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(
@@ -21,13 +22,14 @@ function App() {
     <div className={`App${darkMode ? "-dark" : ""}`}>
       <Header darkMode={darkMode} onClick={handleChange} />
       <About darkMode={darkMode} />
-      <h2 className={`project--title${darkMode ? "-dark" : ""}`}>
+      <h2 className={`project--title${darkMode ? "-dark" : ""}`} id="project">
         My Projects
       </h2>
       <div className="projectcontainer">
         <Projects darkMode={darkMode} />
       </div>
       <TechStack darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
     </div>
   );
 }

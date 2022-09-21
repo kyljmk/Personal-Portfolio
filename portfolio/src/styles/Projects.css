@@ -14,7 +14,7 @@
     background-color: var(--mauve);
     color: var(--blackCoffee);
     box-shadow: 0px 1px 10px 0px var(--blackCoffee);
-    margin-bottom: 25px;
+    margin: 45px;
     border-radius: 10px;
     height: auto;
     font-weight: 300;

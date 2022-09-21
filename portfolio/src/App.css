@@ -33,6 +33,7 @@ body {
   font-size: 32px;
   font-weight: 300;
   color: var(--blackCoffee);
+  margin: 0;
 }
 
 .project--title-dark {
