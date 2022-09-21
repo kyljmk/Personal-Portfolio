@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    color: #3a3335;
+    color: var(--blackCoffee);
 }
 
 .about--container-dark {
@@ -36,7 +36,7 @@
     text-align: justify;
     height: auto;
     width: 250px;
-    line-height: 150%;
+    line-height: 1.6;
     font-weight:900;
     letter-spacing: 200%;
     font-size: 14px;

@@ -1,12 +1,18 @@
 import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("darkMode")) || false
+  );
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
 
   function handleChange() {
     setDarkMode((prev) => !prev);
